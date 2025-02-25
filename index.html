@@ -6,13 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payoo MSF</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
-<body>
-  <h1>Hello MSF</h1>
+<body class="bg-slate-800">
+  <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+    <header>
+      <nav class="flex items-center justify-center mt-24 mb-10">
+        <div class="relative flex items-center justify-center mx-auto w-9/12">
+          <img class="absolute w-48" src="./assets/bg.png" alt="">
+          <img class="w-16" src="./assets/Group.png" alt="">
+        </div>
+      </nav>
+      <!-- login section -->
+      <section>
+        <div class="hero bg-base-200 mt-8">
+          <div class="">
+
+            <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="fieldset-label">Acount Number</label>
+                  <input type="number" class="input" placeholder="Type your number" />
+                  <label class="fieldset-label">PIN</label>
+                  <input type="text" class="input" placeholder="Type your PIN" />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button class="btn btn-neutral mt-4">Login</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+  </section>
 
 </body>
 
