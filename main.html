@@ -5,12 +5,177 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-  <section>
-    <h1>yesss</h1>
-  </section>
+<body class="bg-slate-800">
+
+  <header class="max-w-md mx-auto bg-gray-200">
+    <nav class="flex justify-around items-center py-2">
+      <img class="w-14" src="./assets/Group.png" alt="">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold">$ <span id="main_balance">4500</span></h1>
+        <p class="border p-2 rounded-sm">Available Balance</p>
+      </div>
+      <div>
+        <button class="btn">Log Out</button>
+      </div>
+    </nav>
+    <p class="border-b border-dashed w-full mt-2"></p>
+  </header>
+
+
+  <main class="max-w-md min-h-screen mx-auto py-8 bg-gray-200">
+
+    <!-- title section -->
+    <section>
+      <div class="text-center mb-6 p-4">
+        <h1 class="text-3xl font-bold mb-3">🔥 Welcome to Payooo!</h1>
+        <p class="text-xl">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+      </div>
+    </section>
+
+    <!-- card container section -->
+    <section>
+      <div class="grid grid-cols-3 gap-2 m-2 rounded-lg">
+
+        <div id="add_money_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/wallet1.png" alt="">
+          <p class="text-xl font-bold">Add Money</p>
+        </div>
+        <div id="cash_out_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/send1.png" alt="">
+          <p class="text-xl font-bold">Cash Out</p>
+        </div>
+        <div id="transfer_money_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/money1.png" alt="">
+          <p class="text-xl font-bold">Transfer Money</p>
+        </div>
+        <div id="get_bonus_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/bonus1.png" alt="">
+          <p class="text-xl font-bold">Get Bonus</p>
+        </div>
+        <div id="pay_bill_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/purse1.png" alt="">
+          <p class="text-xl font-bold">Pay Bill</p>
+        </div>
+        <div id="transection_box" class="card-body bg-slate-50">
+          <img class="w-10" src="./assets/transaction1.png" alt="">
+          <p class="text-xl font-bold">Transac
+            tions</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- from section start-->
+    <section id="add_money">
+
+      <div class="mx-auto w-9/12 my-8">
+
+        <h1 class="text-2xl font-bold mb-2">Add Money</h1>
+
+        <div class="card-body w-full max-w-sm shrink-0 shadow-2xl bg-white rounded-lg">
+
+          <form class="fieldset">
+
+            <legend class="font-bold">Select Bank</legend>
+            <select id="Account_number" class="select bg-gray-200">
+              <option disabled selected>Select Bank</option>
+              <option value="BKS">bks</option>
+              <option value="NAGOD">nagod</option>
+              <option value="DBBL">DbbL</option>
+
+            </select>
+
+            <label class="fieldset-label">Bank Account Number</label>
+            <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
+              placeholder="Enter 11 digit account number" required />
+            <label class="fieldset-label">Amount to Add</label>
+            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Add Amount to withdraw"
+              required />
+            <label class="fieldset-label">Pin Number</label>
+            <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
+              required />
+
+            <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+            <button id="add_money_btn" class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Add
+              Money</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cash_out">
+
+      <div class=" mx-auto w-9/12 my-8">
+
+        <h1 class="text-2xl font-bold mb-2">Cashout</h1>
+
+        <div class="card-body w-full max-w-sm shrink-0 shadow-2xl bg-white rounded-lg">
+
+          <form class="fieldset">
+
+            <label class="fieldset-label">Agent Number</label>
+            <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
+              placeholder="Enter 11 digit account number" required />
+            <label class="fieldset-label">Amount</label>
+            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Enter amount to withdraw"
+              required />
+            <label class="fieldset-label">Pin Number</label>
+            <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
+              required />
+
+            <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+            <button id="add_money_btn"
+              class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Withdraw Money</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="transfer_money">
+
+      <div class=" mx-auto w-9/12 my-8">
+
+        <h1 class="text-2xl font-bold mb-2">Transfer Money</h1>
+
+        <div class="card-body w-full max-w-sm shrink-0 shadow-2xl bg-white rounded-lg">
+
+          <form class="fieldset">
+
+            <label class="fieldset-label">User Account Number</label>
+            <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
+              placeholder="Enter 11 digit account number" required />
+            <label class="fieldset-label">Amount</label>
+            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Enter amount to withdraw"
+              required />
+            <label class="fieldset-label">Pin Number</label>
+            <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
+              required />
+
+            <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+            <button id="add_money_btn" class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Send
+              Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="./script/add_money_main.js"></script>
+  <script src="./script/toggle.js"></script>
 </body>
 
 </html>
