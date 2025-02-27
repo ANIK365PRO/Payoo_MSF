@@ -13,14 +13,14 @@ document
     const convertedPin = parseInt(pin);
 
     if (accountNumber.length === 11) {
-      // console.log('Account number is correct');
+      // alert('Account number is correct');
       if (convertedPin === 1234) {
-        // console.log('pin is correct');
+        // alert('sob thik ache');
         window.location.href = './main.html';
       } else {
-        alert('Pin is wrong');
+        alert('Enter valid Pin');
       }
     } else {
-      alert('needed valid account number');
+      alert('Enter valid account number');
     }
   });

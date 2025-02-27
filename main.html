@@ -39,32 +39,39 @@
 
     <!-- card container section -->
     <section>
-      <div class="grid grid-cols-3 gap-2 m-2 rounded-lg">
+      <div class="grid grid-cols-3 gap-4 m-4 rounded-lg text-center">
 
-        <div id="add_money_box" class="card-body bg-slate-50">
+        <div id="add_money_box"
+          class="card-body bg-slate-50 hover:bg-pink-100 hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/wallet1.png" alt="">
-          <p class="text-xl font-bold">Add Money</p>
+          <p class="text-sm font-bold">Add Money</p>
         </div>
-        <div id="cash_out_box" class="card-body bg-slate-50">
+
+        <div id="cash_out_box"
+          class="card-body bg-slate-50 hover:bg-pink-100  hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/send1.png" alt="">
-          <p class="text-xl font-bold">Cash Out</p>
+          <p class="text-sm font-bold">Cash Out</p>
         </div>
-        <div id="transfer_money_box" class="card-body bg-slate-50">
+
+        <div id="transfer_money_box"
+          class="card-body bg-slate-50 hover:bg-pink-100  hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/money1.png" alt="">
-          <p class="text-xl font-bold">Transfer Money</p>
+          <p class="text-sm font-bold">Transfer Money</p>
         </div>
-        <div id="get_bonus_box" class="card-body bg-slate-50">
+        <div id="get_bonus_box"
+          class="card-body bg-slate-50 hover:bg-pink-100  hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/bonus1.png" alt="">
-          <p class="text-xl font-bold">Get Bonus</p>
+          <p class="text-sm font-bold">Get Bonus</p>
         </div>
-        <div id="pay_bill_box" class="card-body bg-slate-50">
+        <div id="pay_bill_box"
+          class="card-body bg-slate-50 hover:bg-pink-100  hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/purse1.png" alt="">
-          <p class="text-xl font-bold">Pay Bill</p>
+          <p class="text-sm font-bold">Pay Bill</p>
         </div>
-        <div id="transection_box" class="card-body bg-slate-50">
+        <div id="transaction_box"
+          class="card-body bg-slate-50 hover:bg-pink-100  hover:text-blue-600 hover:border border-blue-600 rounded-xl">
           <img class="w-10" src="./assets/transaction1.png" alt="">
-          <p class="text-xl font-bold">Transac
-            tions</p>
+          <p class="text-sm font-bold">Transactions History</p>
         </div>
 
       </div>
@@ -83,7 +90,7 @@
           <form class="fieldset">
 
             <legend class="font-bold">Select Bank</legend>
-            <select id="Account_number" class="select bg-gray-200">
+            <select id="Account_name" class="select bg-gray-200">
               <option disabled selected>Select Bank</option>
               <option value="BKS">bks</option>
               <option value="NAGOD">nagod</option>
@@ -95,8 +102,7 @@
             <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
               placeholder="Enter 11 digit account number" required />
             <label class="fieldset-label">Amount to Add</label>
-            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Add Amount to withdraw"
-              required />
+            <input type="number" id="amount" class="input bg-gray-200" placeholder="Enter Amount to Add" required />
             <label class="fieldset-label">Pin Number</label>
             <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
               required />
@@ -122,18 +128,18 @@
           <form class="fieldset">
 
             <label class="fieldset-label">Agent Number</label>
-            <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
+            <input type="number" id="cashout_account_number" class="input bg-gray-200" value="34502837129"
               placeholder="Enter 11 digit account number" required />
             <label class="fieldset-label">Amount</label>
-            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Enter amount to withdraw"
+            <input type="number" id="cashout_amount" class="input bg-gray-200" placeholder="Enter amount to withdraw"
               required />
             <label class="fieldset-label">Pin Number</label>
-            <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
-              required />
+            <input type="number" id="cashout_pin" class="input bg-gray-200" value="1234"
+              placeholder="Enter 4 digit pin number" required />
 
             <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-            <button id="add_money_btn"
-              class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Withdraw Money</button>
+            <button id="cashout_btn" class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Withdraw
+              Money</button>
           </form>
 
         </div>
@@ -152,17 +158,18 @@
           <form class="fieldset">
 
             <label class="fieldset-label">User Account Number</label>
-            <input type="number" id="Account_number" class="input bg-gray-200" value="34502837129"
+            <input type="number" id="transfer_money_account_number" class="input bg-gray-200" value="34502837129"
               placeholder="Enter 11 digit account number" required />
             <label class="fieldset-label">Amount</label>
-            <input type="number" id="amount" class="input bg-gray-200" value="00" placeholder="Enter amount to withdraw"
-              required />
+            <input type="number" id="transfer_money_amount" class="input bg-gray-200" value="00"
+              placeholder="Enter amount to withdraw" required />
             <label class="fieldset-label">Pin Number</label>
-            <input type="number" id="pin" class="input bg-gray-200" value="1234" placeholder="Enter 4 digit pin number"
-              required />
+            <input type="number" id="transfer_money_pin" class="input bg-gray-200" value="1234"
+              placeholder="Enter 4 digit pin number" required />
 
             <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-            <button id="add_money_btn" class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Send
+            <button id="transfer_money_btn"
+              class="btn btn-neutral mt-4 rounded-full bg-blue-600 text-white font-bold">Send
               Now</button>
           </form>
 
@@ -171,11 +178,30 @@
       </div>
     </section>
 
+    <section id="transaction_history">
+
+      <div class=" mx-auto w-9/12 my-8">
+
+        <h1 class="text-2xl font-bold mb-2">Transaction History</h1>
+
+        <div id="transaction_container" class="card-body w-full max-w-sm shrink-0 shadow-2xl bg-white rounded-lg">
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
+  // reuse function
+  <!-- <script src="./utilities/utilities.js"></script> -->
+  <script src="./utilities/reuseToggle.js"></script>
 
   <script src="./script/add_money_main.js"></script>
-  <script src="./script/toggle.js"></script>
+  <!-- <script src="./script/toggle.js"></script> -->
+  <script src="./script/cash_out_main.js"></script>
+
+
 </body>
 
 </html>
